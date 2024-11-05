@@ -391,6 +391,8 @@
 "Assets/scripts/PlayrHealth.cs"
 "Assets/scripts/UIController.cs"
 "Assets/scripts/Weapon.cs"
+"Assets/scripts/Weapon/Projectile.cs"
+"Assets/scripts/Weapon/ProjetileWeapon.cs"
 "Assets/scripts/Weapon/SpinWeapon.cs"
 "Assets/scripts/Weapon/ZoneWeapon.cs"
 -langversion:9.0

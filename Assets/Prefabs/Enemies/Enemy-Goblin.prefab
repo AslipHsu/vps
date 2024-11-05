@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8005357265359303314}
   - component: {fileID: 8302284577327052641}
   - component: {fileID: 4974819536171018195}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy-Goblin
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1883571631
-  m_SortingLayer: -3
+  m_SortingLayer: -4
   m_SortingOrder: 0
   m_Sprite: {fileID: 4723107735738678597, guid: c1cdd26cc09ad224884556bc4d8296ae,
     type: 3}
@@ -192,6 +192,7 @@ MonoBehaviour:
   hitWaitTime: 1
   health: 20
   knockBackTime: 0.5
+  expToGive: 1
 --- !u!1 &7296553128174649567
 GameObject:
   m_ObjectHideFlags: 0
