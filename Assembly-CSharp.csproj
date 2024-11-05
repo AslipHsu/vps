@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\TopDownCharacterController.cs" />
     <Compile Include="Assets\scripts\CameraController.cs" />
+    <Compile Include="Assets\scripts\Weapon\Projectile.cs" />
     <Compile Include="Assets\Sanke_2.cs" />
     <Compile Include="Assets\scripts\UIController.cs" />
     <Compile Include="Assets\scripts\Weapon\ZoneWeapon.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="Assets\scripts\LevelUpSelectionButton.cs" />
     <Compile Include="Assets\scripts\DamageNumberController.cs" />
     <Compile Include="Assets\scripts\ExperienceLevelController.cs" />
+    <Compile Include="Assets\scripts\Weapon\ProjetileWeapon.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\SpriteColorAnimation.cs" />
     <Compile Include="Assets\scripts\EnemyController.cs" />
     <Compile Include="Assets\scripts\PlayerController.cs" />

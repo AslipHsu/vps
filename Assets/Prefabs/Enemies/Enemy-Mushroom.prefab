@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 8949893396667248426}
   - component: {fileID: 8335458581891622133}
   - component: {fileID: 1877901579849652125}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy-Mushroom
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -161,7 +161,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1883571631
-  m_SortingLayer: -3
+  m_SortingLayer: -4
   m_SortingOrder: 0
   m_Sprite: {fileID: 4723107735738678597, guid: f8b30c2afe165d645b54d500a9c30862,
     type: 3}
@@ -277,3 +277,4 @@ MonoBehaviour:
   hitWaitTime: 1
   health: 20
   knockBackTime: 0.5
+  expToGive: 1

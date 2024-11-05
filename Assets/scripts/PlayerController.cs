@@ -32,7 +32,11 @@ public class PlayerController : MonoBehaviour
         sp = GameObject.Find("spriteL").GetComponent<SpriteRenderer>();
         Debug.Log("1");
 
-        AddWeapon(Random.Range(0, unassignedWeapons.Count));
+        if(assignedWeapons.Count==0)
+        {
+            AddWeapon(Random.Range(0, unassignedWeapons.Count));
+        }
+
         Debug.Log("5");
     }
 

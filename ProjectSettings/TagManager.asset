@@ -12,7 +12,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Enemy
   - 
   - 
   - 
@@ -45,11 +45,14 @@ TagManager:
   - name: bk2
     uniqueID: 347799615
     locked: 0
+  - name: enemy
+    uniqueID: 1883571631
+    locked: 0
   - name: pickup
     uniqueID: 940244605
     locked: 0
-  - name: enemy
-    uniqueID: 1883571631
+  - name: weapon
+    uniqueID: 3009180027
     locked: 0
   - name: player
     uniqueID: 4250941897
