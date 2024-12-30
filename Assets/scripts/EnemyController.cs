@@ -20,6 +20,9 @@ public class EnemyController : MonoBehaviour
     private float knockBackCounter;
 
     public int expToGive = 1;
+
+    public int coinValue = 1;
+    public float coinDropRate = .5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,33 +34,45 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(knockBackCounter > 0)
+        if (PlayerController.instance.gameObject.activeSelf)
         {
-            knockBackCounter -= Time.deltaTime;
-            if (moveSpeed > 0)
+            if (knockBackCounter > 0)
             {
-                moveSpeed = -moveSpeed * 2f;
+                knockBackCounter -= Time.deltaTime;
+
+                if (moveSpeed > 0)
+                {
+                    moveSpeed = -moveSpeed * 2f;
+                }
+
+                if (knockBackCounter <= 0)
+                {
+                    moveSpeed = Mathf.Abs(moveSpeed * .5f);
+
+                }
             }
-            if(knockBackCounter <= 0)
+
+            theRB.velocity = (target.position - transform.position).normalized * moveSpeed;
+
+            if (theRB.velocity.x < 0)
             {
-                moveSpeed = Mathf.Abs(moveSpeed * .5f);
-
+                sp.flipX = true;
             }
-        }
-
-
-        theRB.velocity = (target.position-transform.position).normalized*moveSpeed;
-
-        if (theRB.velocity.x < 0){
-            sp.flipX = true;
+            else
+            {
+                sp.flipX = false;
+            }
+            if (hitCounter > 0f)
+            {
+                hitCounter -= Time.deltaTime;
+            }
         }
         else
         {
-            sp.flipX = false;
+            theRB.velocity = Vector2.zero;
         }
-        if(hitCounter > 0f) {
-            hitCounter -= Time.deltaTime;
-        }
+  
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -78,6 +93,12 @@ public class EnemyController : MonoBehaviour
             Destroy(gameObject);
             ExperienceLevelController.Instance.SpawnExp(transform.position,expToGive);
         }
+
+        if (UnityEngine.Random.value <= coinDropRate)
+        {
+            CoinController.instance.DropCoin(transform.position, coinValue);
+        }
+
         DamageNumberController.Instance.SpawnDamage(damageToTake,transform.position);
     }
 
