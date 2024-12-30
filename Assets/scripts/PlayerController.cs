@@ -36,7 +36,9 @@ public class PlayerController : MonoBehaviour
         {
             AddWeapon(Random.Range(0, unassignedWeapons.Count));
         }
-
+        moveSpeed =PlayerStatsController.instance.moveSpeed[0].value;
+        pickupRange = PlayerStatsController.instance.picupRange[0].value;
+        maxWeapons = Mathf.RoundToInt(PlayerStatsController.instance.maxWeapons[0].value);
         Debug.Log("5");
     }
 

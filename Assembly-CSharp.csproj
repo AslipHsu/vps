@@ -60,28 +60,37 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\scripts\LevelManger.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\TopDownCharacterController.cs" />
     <Compile Include="Assets\scripts\CameraController.cs" />
     <Compile Include="Assets\scripts\Weapon\Projectile.cs" />
+    <Compile Include="Assets\scripts\PlayerStatsController.cs" />
     <Compile Include="Assets\Sanke_2.cs" />
     <Compile Include="Assets\scripts\UIController.cs" />
     <Compile Include="Assets\scripts\Weapon\ZoneWeapon.cs" />
     <Compile Include="Assets\scripts\PlayrHealth.cs" />
     <Compile Include="Assets\scripts\Weapon.cs" />
+    <Compile Include="Assets\scripts\Weapon\CloseAttackWeapon.cs" />
     <Compile Include="Assets\scripts\Weapon\SpinWeapon.cs" />
+    <Compile Include="Assets\scripts\Weapon\ThrownWeapon.cs" />
+    <Compile Include="Assets\scripts\Weapon\WeaponThromer.cs" />
+    <Compile Include="Assets\scripts\MainMenu.cs" />
     <Compile Include="Assets\scripts\DamageNumber.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\PropsAltar.cs" />
     <Compile Include="Assets\scripts\EnemyDamager.cs" />
+    <Compile Include="Assets\scripts\CoinPickup.cs" />
     <Compile Include="Assets\scripts\LevelUpSelectionButton.cs" />
     <Compile Include="Assets\scripts\DamageNumberController.cs" />
     <Compile Include="Assets\scripts\ExperienceLevelController.cs" />
     <Compile Include="Assets\scripts\Weapon\ProjetileWeapon.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\SpriteColorAnimation.cs" />
+    <Compile Include="Assets\scripts\PlayerStatUpgradeDisplay.cs" />
     <Compile Include="Assets\scripts\EnemyController.cs" />
     <Compile Include="Assets\scripts\PlayerController.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\LayerTrigger.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\CameraFollow.cs" />
     <Compile Include="Assets\scripts\EnemySpawner.cs" />
+    <Compile Include="Assets\scripts\CoinController.cs" />
     <Compile Include="Assets\scripts\ExpPickup.cs" />
   </ItemGroup>
   <ItemGroup>
